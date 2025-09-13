@@ -11,7 +11,7 @@ const Header = () => {
     }} transition={{
       duration: 0.6
     }} className="container relative z-10 text-center">
-        <h1 className="text-3xl mb-4 text-muted-foreground text-center font-medium">
+        <h1 className="text-3xl mb-4 text-center font-medium text-slate-50 px-0 my-[2px]">
           Links do Vini
         </h1>
         <div className="h-1 w-32 mx-auto bg-gradient-button rounded-full shadow-neon animate-gradient-shift bg-[length:200%_100%]" />

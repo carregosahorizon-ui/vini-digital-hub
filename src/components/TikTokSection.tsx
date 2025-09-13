@@ -1,25 +1,25 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Video, Users, TrendingUp, ExternalLink } from "lucide-react";
-
 const TikTokSection = () => {
-  return (
-    <section className="py-20 px-4">
+  return <section className="py-20 px-4">
       <div className="container max-w-4xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center"
-        >
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-primary rounded-2xl mb-6 shadow-neon">
-            <Video className="w-10 h-10 text-primary-foreground" />
-          </div>
+        <motion.div initial={{
+        opacity: 0,
+        y: 40
+      }} whileInView={{
+        opacity: 1,
+        y: 0
+      }} viewport={{
+        once: true
+      }} transition={{
+        duration: 0.8
+      }} className="text-center">
+          
           
           <div className="flex items-center justify-center gap-3 mb-6">
             <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
             </svg>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               TikTok do Vini
@@ -31,46 +31,19 @@ const TikTokSection = () => {
           </p>
           
           <div className="grid md:grid-cols-3 gap-6 mb-10 max-w-3xl mx-auto">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border"
-            >
-              <Users className="w-8 h-8 text-primary mb-3 mx-auto" />
-              <h3 className="font-semibold text-foreground mb-2">+50K Seguidores</h3>
-              <p className="text-sm text-muted-foreground">Comunidade engajada</p>
-            </motion.div>
             
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border"
-            >
-              <TrendingUp className="w-8 h-8 text-primary mb-3 mx-auto" />
-              <h3 className="font-semibold text-foreground mb-2">Conteúdo Diário</h3>
-              <p className="text-sm text-muted-foreground">Dicas práticas sempre</p>
-            </motion.div>
             
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border"
-            >
-              <Video className="w-8 h-8 text-primary mb-3 mx-auto" />
-              <h3 className="font-semibold text-foreground mb-2">Cases Reais</h3>
-              <p className="text-sm text-muted-foreground">Resultados comprovados</p>
-            </motion.div>
+            
+            
+            
           </div>
           
-          <Button 
-            variant="neon" 
-            size="lg"
-            onClick={() => window.open("https://tiktok.com/@vini", "_blank")}
-          >
+          <Button variant="neon" size="lg" onClick={() => window.open("https://tiktok.com/@vini", "_blank")}>
             Ver meu TikTok
             <ExternalLink className="ml-2" />
           </Button>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default TikTokSection;

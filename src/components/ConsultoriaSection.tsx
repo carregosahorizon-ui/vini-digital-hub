@@ -1,23 +1,23 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Calendar, Building2, TrendingUp } from "lucide-react";
-
 const ConsultoriaSection = () => {
-  return (
-    <section className="py-20 px-4 bg-gradient-card">
+  return <section className="py-20 px-4 bg-gradient-card">
       <div className="container max-w-4xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="bg-card/50 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-border shadow-2xl"
-        >
+        <motion.div initial={{
+        opacity: 0,
+        y: 40
+      }} whileInView={{
+        opacity: 1,
+        y: 0
+      }} viewport={{
+        once: true
+      }} transition={{
+        duration: 0.8
+      }} className="bg-card/50 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-border shadow-2xl">
           <div className="flex items-center gap-3 mb-6">
             <Building2 className="w-8 h-8 text-primary" />
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Consultoria Vini para Empresas
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Minha Consultoria para Empresas</h2>
           </div>
           
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -57,19 +57,12 @@ const ConsultoriaSection = () => {
             </div>
           </div>
           
-          <Button 
-            variant="neon" 
-            size="lg" 
-            className="w-full md:w-auto"
-            onClick={() => window.open("https://calendly.com/vini", "_blank")}
-          >
+          <Button variant="neon" size="lg" className="w-full md:w-auto" onClick={() => window.open("https://calendly.com/vini", "_blank")}>
             <Calendar className="mr-2" />
             Agendar Consultoria
           </Button>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ConsultoriaSection;
