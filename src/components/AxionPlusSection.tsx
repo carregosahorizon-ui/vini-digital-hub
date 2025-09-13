@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-import viniAvatar from "@/assets/vini-avatar.jpg";
+import viniAvatar from "@/assets/vini-new-avatar.png";
 const AxionPlusSection = () => {
   return <section className="py-20 px-4">
       <div className="container max-w-6xl mx-auto">
