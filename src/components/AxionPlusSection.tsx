@@ -25,9 +25,9 @@ const AxionPlusSection = () => {
             
             <p className="text-lg text-muted-foreground leading-relaxed">Com o Axion Pro, você terá acesso ao meu serviço exclusivo para acelerar resultados no digital com estratégias validadas. Preencha o formulário e dê o próximo passo para transformar o seu negócio.</p>
             
-            <Button variant="hero" size="lg" onClick={() => window.open("https://form.respondi.app/Mbt058Sv", "_blank")} className="group animate-glow-pulse text-base">
+            <Button variant="hero" size="lg" onClick={() => window.open("https://forms.gle/example", "_blank")} className="group animate-glow-pulse text-base">
               Agende uma reunião
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />c
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
           
