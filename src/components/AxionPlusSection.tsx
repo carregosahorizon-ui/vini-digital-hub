@@ -27,7 +27,7 @@ const AxionPlusSection = () => {
             
             <Button variant="hero" size="lg" onClick={() => window.open("https://form.respondi.app/Mbt058Sv", "_blank")} className="group animate-glow-pulse text-base">
               Agende uma reunião
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />c
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
           
