@@ -38,7 +38,7 @@ const TikTokSection = () => {
             
           </div>
           
-          <Button variant="neon" size="lg" onClick={() => window.open("https://tiktok.com/@vini", "_blank")}>
+          <Button variant="neon" size="lg" onClick={() => window.open("https://www.tiktok.com/@vinicarreg", "_blank")}>
             Ver meu TikTok
             <ExternalLink className="ml-2" />
           </Button>
